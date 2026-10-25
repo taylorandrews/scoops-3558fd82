@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>What's Playing at the Shop</title>
+  <meta name="description" content="Drew's 56 shop playlists, pulled from Spotify and mapped: artists, genres, eras and the energy of each one, song by song.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='12' r='9' fill='%23b8323c'/%3E%3Cpath d='M9 15 L16 30 L23 15 Z' fill='%23d9a35b'/%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip" href="#app">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#/">What's playing at the shop</a>
+      <nav class="tabs" aria-label="Sections">
+        <a href="#/" data-tab="overview">Overview</a>
+        <a href="#/playlists" data-tab="playlists">Playlists</a>
+        <a href="#/about" data-tab="about">About the data</a>
+      </nav>
+      <label class="search">
+        <span class="visually-hidden">Search songs, artists and playlists</span>
+        <input id="search" type="search" placeholder="Search songs or artists" autocomplete="off">
+      </label>
+    </div>
+  </header>
+  <main id="app" class="wrap" tabindex="-1">
+    <p class="loading">Loading the playlists…</p>
+  </main>
+  <div id="tooltip" class="tooltip" role="status" hidden></div>
+  <script src="app.js"></script>
+</body>
+</html>
